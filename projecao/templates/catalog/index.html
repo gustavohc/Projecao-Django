@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% extends "../base.html" %}
+    {% block blockname %}
+        <h1>Welcome to the catalog</h1>
+        <a href="{% url 'catalog:add_house' %}">Cadastrar uma nova casa</a>
+        <a href="{% url 'admin:index' %}">Admin page</a>
+        <a href="{% url 'index' %}">Index</a>
+    {% endblock blockname %}
