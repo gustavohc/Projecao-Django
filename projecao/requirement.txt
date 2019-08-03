@@ -1,0 +1,4 @@
+pillow
+bcrypt
+django[argon2]
+django-bootstrap-static

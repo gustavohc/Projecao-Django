@@ -13,3 +13,6 @@ class House(models.Model):
     price = models.FloatField()
     descrition = models.TextField(max_length=500)
     # address = models.ForeignKey(Address, on_delete=models.PROTECT)
+    cep = models.PositiveIntegerField()
+    street = models.CharField(max_length=256)
+    number = models.PositiveIntegerField()

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Projeção Imobiliária{% endblock title %}
+
+{% block body_block %}
+  <div class="container-fluid no-padding main_banner"> 
+    <div class="row">
+      <h1>Traga o seu imóvel para a Projeção!</h1>
+    </div>
+
+    <div class="row">
+      <form action="">
+        <div class="form-group col-md-12">
+            <div class="input-group">
+                <select id="home_type" class="custom-select col-md-3">
+                    <option value="1">Apartamento</option>
+                    <option value="2">Casa</option>
+                    <option value="3">Chácara</option>
+                    <option value="4">Comercial</option>
+                </select>
+                <input type="text" class="form-control col-md-9" placeholder="Bairro, Endereço, Referência">
+            </div>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock body_block %}
